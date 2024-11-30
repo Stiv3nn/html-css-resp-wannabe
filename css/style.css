@@ -47,7 +47,7 @@ img {
 
 /* LAYOUT */
 .container {
-    /* width: 1140px; */
+    width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -130,29 +130,31 @@ img {
 
  /* VERSIONE TABLET */
  
- @media screen (max-width: 768px) {
+ @media screen and (max-width: 768px) {
 
     .container {
         width: 100%;
-        
     }
     
  }
 
 
- 
- /* VERSIONE DESKTOP */
-
- @media screen (min-width: 1024px) {
-    
- }
-
-
-
  /* VERSIONE MOBILE */
 
- @media screen (min-width: 420px){
+ @media screen and (max-width: 480px){
 
+    .site-header h1{
+        font-size: 50px;
+    } 
+
+    .lessons h2{
+        font-size: 40px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
     
-    
+
  }
